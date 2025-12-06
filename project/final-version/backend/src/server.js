@@ -13,12 +13,13 @@ connectDB();
 // Middlewares
 app.use(express.json({ limit: "1mb" }));
 
-app.use(cors({
-  origin: process.env.CORS_ORIGIN,
-  methods: ["GET","HEAD","PUT","PATCH","POST","DELETE","OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-}));
+// CORS FIX (Final)
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN,
+    credentials: true,
+  })
+);
 
 app.use(morgan("dev"));
 
@@ -40,4 +41,6 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`> API running on port ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`> API running on port ${PORT}`)
+);
