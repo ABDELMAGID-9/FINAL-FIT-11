@@ -15,13 +15,10 @@ app.use(express.json({ limit: "1mb" }));
 
 app.use(cors({
   origin: process.env.CORS_ORIGIN,
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-  allowedHeaders: "Content-Type, Authorization",
+  methods: ["GET","HEAD","PUT","PATCH","POST","DELETE","OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 }));
-
-// FIX: allow preflight
-app.options("*", cors());
 
 app.use(morgan("dev"));
 
