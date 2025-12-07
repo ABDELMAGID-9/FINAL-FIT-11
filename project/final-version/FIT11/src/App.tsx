@@ -32,6 +32,10 @@ function AppInner() {
   const [isDarkMode, setIsDarkMode] = useState(
     () => localStorage.getItem("theme") === "dark"
   );
+  useEffect(() => {
+  console.log("VITE_API_BASE =", import.meta.env.VITE_API_BASE);
+}, []);
+
   const [userPoints, setUserPoints] = useState(0);
   const [savedPlans, setSavedPlans] = useState<SavedWorkoutPlan[]>(() =>
     JSON.parse(localStorage.getItem("workoutPlans") || "[]")
@@ -152,9 +156,12 @@ function AppInner() {
             </MainLayout>
           </ProtectedRoute>
         }
+        
       />
+      
     </Routes>
   );
+  
 }
 
 // 🔁 ملف الـ App الخارجي (فيه Router + AuthProvider)
