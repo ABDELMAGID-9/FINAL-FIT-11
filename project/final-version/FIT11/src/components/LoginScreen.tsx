@@ -3,7 +3,6 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import logo from '../assets/b3d8b34ea9b2d39d49e6a7f9a3f849e348f29c94.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth'; // ✅ نستدعي useAuth
 
@@ -59,7 +58,6 @@ export function LoginScreen() {
         <Card className="border-0 shadow-none md:border-2 md:border-primary/20 md:shadow-2xl bg-transparent md:bg-card">
           <CardHeader className="space-y-4 text-center bg-transparent md:bg-gradient-to-br md:from-card md:to-accent/10 md:p-8">
             <div className="flex justify-center">
-              <img src={logo} alt="Fit11" className="h-20 md:h-24 mb-2 transition-all" />
             </div>
             <CardTitle className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Welcome Back

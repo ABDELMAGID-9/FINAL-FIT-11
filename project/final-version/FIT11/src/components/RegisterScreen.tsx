@@ -4,7 +4,6 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import logo from 'figma:asset/b3d8b34ea9b2d39d49e6a7f9a3f849e348f29c94.png';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
  // ✅ نضيف الاستدعاء
@@ -59,7 +58,7 @@ setTimeout(() => {
         <Card className="border-0 shadow-none md:border-2 md:border-primary/20 md:shadow-2xl bg-transparent md:bg-card">
           <CardHeader className="space-y-4 text-center bg-transparent md:bg-gradient-to-br md:from-card md:to-accent/10 md:p-8">
             <div className="flex justify-center">
-              <img src={logo} alt="Fit11" className="h-16 md:h-20 mb-2 transition-all" />
+            
             </div>
             <CardTitle className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Join Fit11

@@ -1,5 +1,7 @@
+// src/App.tsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
 import { MainLayout } from "./components/shared/MainLayout";
 import { LoginScreen } from "./components/LoginScreen";
 import { RegisterScreen } from "./components/RegisterScreen";
@@ -15,90 +17,153 @@ import { Leaderboard } from "./components/Leaderboard";
 import { NoRepCounter } from "./components/NoRepCounter";
 import { CommunityHub } from "./components/CommunityHub";
 import { AudioLibrary } from "./components/AudioLibrary";
+
 import { AuthProvider, useAuth } from "./hooks/useAuth";
 import type { SavedWorkoutPlan } from "./types/workout";
 
-
-
-// ✅ مكون حماية المسارات
+// 🔐 حماية المسارات
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuth();
   return isAuthenticated ? children : <Navigate to="/login" replace />;
 }
 
-export default function App() {
-  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem("theme") === "dark");
-const [userPoints, setUserPoints] = useState(0);
-  const [savedPlans, setSavedPlans] = useState<SavedWorkoutPlan[]>(() => JSON.parse(localStorage.getItem("workoutPlans") || "[]"));
+// 👇 هذا هو الداخل الفعلي للتطبيق (يستخدم useAuth)
+function AppInner() {
+  const [isDarkMode, setIsDarkMode] = useState(
+    () => localStorage.getItem("theme") === "dark"
+  );
+  const [userPoints, setUserPoints] = useState(0);
+  const [savedPlans, setSavedPlans] = useState<SavedWorkoutPlan[]>(() =>
+    JSON.parse(localStorage.getItem("workoutPlans") || "[]")
+  );
   const [leaderboardRank, setLeaderboardRank] = useState(0);
 
-  const toggleTheme = () => setIsDarkMode(!isDarkMode);
-  const handlePointsUpdate = (points: number) => setUserPoints(points);
-  const handleSavePlan = (plan: SavedWorkoutPlan) => setSavedPlans(prev => [...prev, plan]);
-  const handleDeletePlan = (planId: string) => setSavedPlans(prev => prev.filter(p => p.id !== planId));
+  const { logout } = useAuth();
 
+  const toggleTheme = () => setIsDarkMode((prev) => !prev);
+  const handlePointsUpdate = (points: number) => setUserPoints(points);
+  const handleSavePlan = (plan: SavedWorkoutPlan) =>
+    setSavedPlans((prev) => [...prev, plan]);
+  const handleDeletePlan = (planId: string) =>
+    setSavedPlans((prev) => prev.filter((p) => p.id !== planId));
+
+  // نخزّن الثيم في localStorage
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDarkMode);
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   }, [isDarkMode]);
 
+  // 🧨 logout موحّد يمر للأبناء
+  const handleLogout = () => {
+    setUserPoints(0);
+    logout(); // ← هذه من useAuth وتسوّي redirect /login
+  };
 
   return (
-    <AuthProvider>
-      <Router>
-        <Routes>
-          {/* صفحات عامة */}
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<LoginScreen />} />
-          <Route path="/register" element={<RegisterScreen />} />
+    <Routes>
+      {/* صفحات عامة */}
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<LoginScreen />} />
+      <Route path="/register" element={<RegisterScreen />} />
 
-          {/* صفحات محمية داخل الـ Layout */}
-          <Route
-            path="/*"
-            element={
-              <ProtectedRoute>
-                <MainLayout
-  onLogout={() => {
-    localStorage.removeItem("token");
-    setUserPoints(0);          // 👈 مهم: نرجّع النقاط للصفر عند الخروج
-    window.location.href = "/login";
-  }}
-                  isDarkMode={isDarkMode}
-                  onToggleTheme={toggleTheme}
-                >
-                  <Routes>
-                    <Route
-                      path="dashboard"
-                      element={
-                        <Dashboard
-                          onLogout={() => {}}
-                          isDarkMode={isDarkMode}
-                          onToggleTheme={toggleTheme}
-                          savedPlans={savedPlans}
-                          onDeletePlan={handleDeletePlan}
-                          userPoints={userPoints}
-                          leaderboardRank={leaderboardRank}
-                          currentStreak={12}
-                        />
-                      }
+      {/* صفحات محمية داخل الـ Layout */}
+      <Route
+        path="/*"
+        element={
+          <ProtectedRoute>
+            <MainLayout
+              onLogout={handleLogout}
+              isDarkMode={isDarkMode}
+              onToggleTheme={toggleTheme}
+            >
+              <Routes>
+                <Route
+                  path="dashboard"
+                  element={
+                    <Dashboard
+                      onLogout={handleLogout}
+                      isDarkMode={isDarkMode}
+                      onToggleTheme={toggleTheme}
+                      savedPlans={savedPlans}
+                      onDeletePlan={handleDeletePlan}
+                      userPoints={userPoints}
+                      leaderboardRank={leaderboardRank}
+                      currentStreak={12}
                     />
-                    <Route path="ai-builder" element={<AIWorkoutBuilder onLogout={() => {}} onSavePlan={handleSavePlan} savedPlans={savedPlans} />} />
-<Route path="plan/:id" element={<WorkoutDetails onLogout={() => {}} />} />
-                    <Route path="nutrition" element={<NutritionPlanner onLogout={() => {}} />} />
-                    <Route path="leaderboard" element={<Leaderboard onLogout={() => {}} userPoints={userPoints} onPointsUpdate={handlePointsUpdate} leaderboardRank={leaderboardRank} />} />
-                    <Route path="no-rep-counter" element={<NoRepCounter onLogout={() => {}} />} />
-                    <Route path="community" element={<CommunityHub onLogout={() => {}} userPoints={userPoints} onPointsUpdate={handlePointsUpdate} />} />
-                    <Route path="audio-library" element={<AudioLibrary onLogout={() => {}} />} />
-                    <Route path="settings" element={<SettingsPage onLogout={() => {}} />} />
-                      <Route path="workout-form" element={<WorkoutForm onLogout={() => {}} />} />
-                    <Route path="*" element={<NotFoundPage />} />
-                  </Routes>
-                </MainLayout>
-              </ProtectedRoute>
-            }
-          />
-        </Routes>
-      </Router>
-    </AuthProvider>
+                  }
+                />
+                <Route
+                  path="ai-builder"
+                  element={
+                    <AIWorkoutBuilder
+                      onLogout={handleLogout}
+                      onSavePlan={handleSavePlan}
+                      savedPlans={savedPlans}
+                    />
+                  }
+                />
+                <Route
+                  path="plan/:id"
+                  element={<WorkoutDetails onLogout={handleLogout} />}
+                />
+                <Route
+                  path="nutrition"
+                  element={<NutritionPlanner onLogout={handleLogout} />}
+                />
+                <Route
+                  path="leaderboard"
+                  element={
+                    <Leaderboard
+                      onLogout={handleLogout}
+                      userPoints={userPoints}
+                      onPointsUpdate={handlePointsUpdate}
+                      leaderboardRank={leaderboardRank}
+                    />
+                  }
+                />
+                <Route
+                  path="no-rep-counter"
+                  element={<NoRepCounter onLogout={handleLogout} />}
+                />
+                <Route
+                  path="community"
+                  element={
+                    <CommunityHub
+                      onLogout={handleLogout}
+                      userPoints={userPoints}
+                      onPointsUpdate={handlePointsUpdate}
+                    />
+                  }
+                />
+                <Route
+                  path="audio-library"
+                  element={<AudioLibrary onLogout={handleLogout} />}
+                />
+                <Route
+                  path="settings"
+                  element={<SettingsPage onLogout={handleLogout} />}
+                />
+                <Route
+                  path="workout-form"
+                  element={<WorkoutForm onLogout={handleLogout} />}
+                />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </MainLayout>
+          </ProtectedRoute>
+        }
+      />
+    </Routes>
+  );
+}
+
+// 🔁 ملف الـ App الخارجي (فيه Router + AuthProvider)
+export default function App() {
+  return (
+    <Router>
+      <AuthProvider>
+        <AppInner />
+      </AuthProvider>
+    </Router>
   );
 }
