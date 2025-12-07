@@ -1,0 +1,106 @@
+"filename", "language", "JavaScript", "HTML", "TypeScript", "PostCSS", "TypeScript JSX", "Markdown", "JSON", "Dotenv", "comment", "blank", "total"
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\.env", "Dotenv", 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 2
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\README.md", "Markdown", 0, 0, 0, 0, 0, 64, 0, 0, 0, 24, 88
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\index.html", "HTML", 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\package-lock.json", "JSON", 0, 0, 0, 0, 0, 0, 3887, 0, 0, 1, 3888
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\package.json", "JSON", 0, 0, 0, 0, 0, 0, 62, 0, 0, 1, 63
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\App.tsx", "TypeScript JSX", 0, 0, 0, 0, 92, 0, 0, 0, 3, 10, 105
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\AIWorkoutBuilder.tsx", "TypeScript JSX", 0, 0, 0, 0, 611, 0, 0, 0, 10, 52, 673
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\AudioLibrary.tsx", "TypeScript JSX", 0, 0, 0, 0, 377, 0, 0, 0, 5, 23, 405
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\CommunityHub.tsx", "TypeScript JSX", 0, 0, 0, 0, 935, 0, 0, 0, 34, 94, 1063
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\Dashboard.tsx", "TypeScript JSX", 0, 0, 0, 0, 194, 0, 0, 0, 9, 30, 233
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\DataTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 108, 0, 0, 0, 0, 4, 112
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\DetailsPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 168, 0, 0, 0, 1, 15, 184
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\FormPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 186, 0, 0, 0, 2, 26, 214
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\LandingPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 483, 0, 0, 0, 23, 39, 545
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\Leaderboard.tsx", "TypeScript JSX", 0, 0, 0, 0, 847, 0, 0, 0, 14, 48, 909
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\LoginScreen.tsx", "TypeScript JSX", 0, 0, 0, 0, 120, 0, 0, 0, 0, 17, 137
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\NoRepCounter.tsx", "TypeScript JSX", 0, 0, 0, 0, 309, 0, 0, 0, 8, 33, 350
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\NotFoundPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 38, 0, 0, 0, 0, 4, 42
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\NutritionPlanner.tsx", "TypeScript JSX", 0, 0, 0, 0, 909, 0, 0, 0, 16, 75, 1000
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\RegisterScreen.tsx", "TypeScript JSX", 0, 0, 0, 0, 147, 0, 0, 0, 1, 18, 166
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\SettingsPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 363, 0, 0, 0, 4, 44, 411
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\WorkoutDetails.tsx", "TypeScript JSX", 0, 0, 0, 0, 440, 0, 0, 0, 23, 53, 516
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\WorkoutForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 409, 0, 0, 0, 16, 52, 477
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\features\WorkoutTable.tsx", "TypeScript JSX", 0, 0, 0, 0, 157, 0, 0, 0, 0, 6, 163
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\EmptyState.tsx", "TypeScript JSX", 0, 0, 0, 0, 26, 0, 0, 0, 0, 5, 31
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\ErrorState.tsx", "TypeScript JSX", 0, 0, 0, 0, 25, 0, 0, 0, 0, 5, 30
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\FitnessEmptyState.tsx", "TypeScript JSX", 0, 0, 0, 0, 39, 0, 0, 0, 0, 6, 45
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\LoadingState.tsx", "TypeScript JSX", 0, 0, 0, 0, 32, 0, 0, 0, 0, 4, 36
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\MainLayout.tsx", "TypeScript JSX", 0, 0, 0, 0, 28, 0, 0, 0, 2, 4, 34
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\Sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 79, 0, 0, 0, 3, 7, 89
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\shared\TopBar.tsx", "TypeScript JSX", 0, 0, 0, 0, 67, 0, 0, 0, 3, 7, 77
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\accordion.tsx", "TypeScript JSX", 0, 0, 0, 0, 59, 0, 0, 0, 0, 8, 67
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\alert-dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 143, 0, 0, 0, 0, 15, 158
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\alert.tsx", "TypeScript JSX", 0, 0, 0, 0, 60, 0, 0, 0, 0, 7, 67
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\aspect-ratio.tsx", "TypeScript JSX", 0, 0, 0, 0, 8, 0, 0, 0, 0, 4, 12
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\avatar.tsx", "TypeScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 0, 7, 54
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\badge.tsx", "TypeScript JSX", 0, 0, 0, 0, 41, 0, 0, 0, 0, 6, 47
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\breadcrumb.tsx", "TypeScript JSX", 0, 0, 0, 0, 99, 0, 0, 0, 0, 11, 110
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\button.tsx", "TypeScript JSX", 0, 0, 0, 0, 52, 0, 0, 0, 0, 6, 58
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\calendar.tsx", "TypeScript JSX", 0, 0, 0, 0, 71, 0, 0, 0, 0, 5, 76
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\card.tsx", "TypeScript JSX", 0, 0, 0, 0, 83, 0, 0, 0, 0, 10, 93
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\carousel.tsx", "TypeScript JSX", 0, 0, 0, 0, 214, 0, 0, 0, 0, 28, 242
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\chart.tsx", "TypeScript JSX", 0, 0, 0, 0, 315, 0, 0, 0, 2, 37, 354
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\checkbox.tsx", "TypeScript JSX", 0, 0, 0, 0, 28, 0, 0, 0, 0, 5, 33
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\collapsible.tsx", "TypeScript JSX", 0, 0, 0, 0, 28, 0, 0, 0, 0, 6, 34
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\command.tsx", "TypeScript JSX", 0, 0, 0, 0, 165, 0, 0, 0, 0, 13, 178
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\context-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 234, 0, 0, 0, 0, 19, 253
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 124, 0, 0, 0, 0, 14, 138
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\drawer.tsx", "TypeScript JSX", 0, 0, 0, 0, 119, 0, 0, 0, 0, 14, 133
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\dropdown-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 239, 0, 0, 0, 0, 19, 258
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\form.tsx", "TypeScript JSX", 0, 0, 0, 0, 144, 0, 0, 0, 0, 25, 169
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\hover-card.tsx", "TypeScript JSX", 0, 0, 0, 0, 38, 0, 0, 0, 0, 7, 45
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\input-otp.tsx", "TypeScript JSX", 0, 0, 0, 0, 69, 0, 0, 0, 0, 9, 78
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\input.tsx", "TypeScript JSX", 0, 0, 0, 0, 18, 0, 0, 0, 0, 4, 22
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\label.tsx", "TypeScript JSX", 0, 0, 0, 0, 20, 0, 0, 0, 0, 5, 25
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\menubar.tsx", "TypeScript JSX", 0, 0, 0, 0, 257, 0, 0, 0, 0, 20, 277
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\navigation-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 157, 0, 0, 0, 0, 12, 169
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\pagination.tsx", "TypeScript JSX", 0, 0, 0, 0, 117, 0, 0, 0, 0, 11, 128
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\popover.tsx", "TypeScript JSX", 0, 0, 0, 0, 41, 0, 0, 0, 0, 8, 49
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\progress.tsx", "TypeScript JSX", 0, 0, 0, 0, 27, 0, 0, 0, 0, 5, 32
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\radio-group.tsx", "TypeScript JSX", 0, 0, 0, 0, 40, 0, 0, 0, 0, 6, 46
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\resizable.tsx", "TypeScript JSX", 0, 0, 0, 0, 50, 0, 0, 0, 0, 7, 57
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\scroll-area.tsx", "TypeScript JSX", 0, 0, 0, 0, 53, 0, 0, 0, 0, 6, 59
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\select.tsx", "TypeScript JSX", 0, 0, 0, 0, 176, 0, 0, 0, 0, 14, 190
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\separator.tsx", "TypeScript JSX", 0, 0, 0, 0, 24, 0, 0, 0, 0, 5, 29
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\sheet.tsx", "TypeScript JSX", 0, 0, 0, 0, 126, 0, 0, 0, 0, 14, 140
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 660, 0, 0, 0, 12, 57, 729
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\skeleton.tsx", "TypeScript JSX", 0, 0, 0, 0, 11, 0, 0, 0, 0, 3, 14
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\slider.tsx", "TypeScript JSX", 0, 0, 0, 0, 58, 0, 0, 0, 0, 6, 64
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\sonner.tsx", "TypeScript JSX", 0, 0, 0, 0, 21, 0, 0, 0, 0, 5, 26
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\switch.tsx", "TypeScript JSX", 0, 0, 0, 0, 27, 0, 0, 0, 0, 5, 32
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\table.tsx", "TypeScript JSX", 0, 0, 0, 0, 105, 0, 0, 0, 0, 12, 117
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\tabs.tsx", "TypeScript JSX", 0, 0, 0, 0, 59, 0, 0, 0, 0, 8, 67
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\textarea.tsx", "TypeScript JSX", 0, 0, 0, 0, 15, 0, 0, 0, 0, 4, 19
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\toggle-group.tsx", "TypeScript JSX", 0, 0, 0, 0, 66, 0, 0, 0, 0, 8, 74
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\toggle.tsx", "TypeScript JSX", 0, 0, 0, 0, 42, 0, 0, 0, 0, 6, 48
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\tooltip.tsx", "TypeScript JSX", 0, 0, 0, 0, 54, 0, 0, 0, 0, 8, 62
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\use-mobile.ts", "TypeScript", 0, 0, 17, 0, 0, 0, 0, 0, 0, 5, 22
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\ui\utils.ts", "TypeScript", 0, 0, 5, 0, 0, 0, 0, 0, 0, 2, 7
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\components\utils\ImageWithFallback.tsx", "TypeScript JSX", 0, 0, 0, 0, 22, 0, 0, 0, 0, 6, 28
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\hooks\useAuth.tsx", "TypeScript JSX", 0, 0, 0, 0, 96, 0, 0, 0, 3, 18, 117
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\index.css", "PostCSS", 0, 0, 0, 3444, 0, 0, 0, 0, 1, 856, 4301
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\lib\api.ts", "TypeScript", 0, 0, 109, 0, 0, 0, 0, 0, 19, 25, 153
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\main.tsx", "TypeScript JSX", 0, 0, 0, 0, 4, 0, 0, 0, 0, 3, 7
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\styles\globals.css", "PostCSS", 0, 0, 0, 172, 0, 0, 0, 0, 3, 15, 190
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\src\types\workout.ts", "TypeScript", 0, 0, 11, 0, 0, 0, 0, 0, 0, 1, 12
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\FIT11\vite.config.ts", "TypeScript", 0, 0, 59, 0, 0, 0, 0, 0, 0, 2, 61
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\.env", "Dotenv", 0, 0, 0, 0, 0, 0, 0, 8, 0, 2, 10
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\package-lock.json", "JSON", 0, 0, 0, 0, 0, 0, 1748, 0, 0, 1, 1749
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\package.json", "JSON", 0, 0, 0, 0, 0, 0, 28, 0, 0, 1, 29
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\config\db.js", "JavaScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 2, 17
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\middleware\auth.js", "JavaScript", 16, 0, 0, 0, 0, 0, 0, 0, 2, 5, 23
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\models\NutritionLog.js", "JavaScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 3, 22
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\models\Post.js", "JavaScript", 22, 0, 0, 0, 0, 0, 0, 0, 0, 3, 25
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\models\User.js", "JavaScript", 34, 0, 0, 0, 0, 0, 0, 0, 14, 10, 58
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\models\Workout.js", "JavaScript", 27, 0, 0, 0, 0, 0, 0, 0, 2, 7, 36
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\routes\Post.js", "JavaScript", 140, 0, 0, 0, 0, 0, 0, 0, 32, 40, 212
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\routes\ai.js", "JavaScript", 111, 0, 0, 0, 0, 0, 0, 0, 4, 14, 129
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\routes\auth.js", "JavaScript", 132, 0, 0, 0, 0, 0, 0, 0, 21, 31, 184
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\routes\nutrition.js", "JavaScript", 48, 0, 0, 0, 0, 0, 0, 0, 13, 12, 73
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\routes\users.js", "JavaScript", 28, 0, 0, 0, 0, 0, 0, 0, 18, 6, 52
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\routes\workouts.js", "JavaScript", 90, 0, 0, 0, 0, 0, 0, 0, 7, 18, 115
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\server.js", "JavaScript", 27, 0, 0, 0, 0, 0, 0, 0, 7, 10, 44
+"c:\Users\jeddo\Downloads\backend-main (2)\project\final-version\backend\src\utils\aiProvider.js", "JavaScript", 106, 0, 0, 0, 0, 0, 0, 0, 4, 11, 121
+"Total", "-", 815, 13, 201, 3616, 11915, 64, 5725, 9, 341, 2334, 25033
