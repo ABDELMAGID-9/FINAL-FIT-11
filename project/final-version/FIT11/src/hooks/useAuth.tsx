@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { login as apiLogin, registerUser, me, updateUserPoints } from "../lib/api.ts";
+import { useNavigate } from "react-router-dom";
 
 type User = {
   _id: string;
@@ -27,8 +28,8 @@ const AuthContext = createContext<AuthContextType>(null as any);
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [booted, setBooted] = useState(false);
+  const navigate = useNavigate();
 
-  // 🔥 تحميل المستخدم عند إعادة فتح الموقع
   useEffect(() => {
     const token = localStorage.getItem("token");
 
@@ -49,7 +50,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     fetchUser();
   }, []);
 
-  // 🔄 تحديث بيانات المستخدم
   const refreshUser = async () => {
     try {
       const res = await me();
@@ -59,44 +59,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  // ⭐️ إضافة النقاط
   const addPoints = async (amount: number) => {
     if (!user) return;
     try {
       const res = await updateUserPoints(amount);
-      setUser((prev) =>
-        prev ? { ...prev, points: res.points } : prev
-      );
+      setUser((prev) => (prev ? { ...prev, points: res.points } : prev));
     } catch (err) {
       console.error("❌ Failed to update points:", err);
     }
   };
 
-  // ⭐️ تسجيل الدخول + إعادة التوجيه
+  // ⭐️ تسجيل الدخول
   const login = async (email: string, password: string) => {
     const res = await apiLogin(email, password);
     localStorage.setItem("token", res.token);
     setUser(res.user);
-
-    // 🔥 إعادة توجيه مباشرة بعد تسجيل الدخول
-    window.location.href = "/dashboard";
+    navigate("/dashboard");  // 🔥 الحل الصحيح
   };
 
-  // ⭐️ إنشاء حساب جديد + إعادة التوجيه
+  // ⭐️ إنشاء حساب جديد
   const register = async (data: { firstName: string; lastName: string; email: string; password: string; gymLevel: string }) => {
     const res = await registerUser(data);
     localStorage.setItem("token", res.token);
     setUser(res.user);
-
-    // 🔥 إعادة توجيه مباشرة بعد التسجيل
-    window.location.href = "/dashboard";
+    navigate("/dashboard"); // 🔥 الحل الصحيح
   };
 
-  // ⭐️ تسجيل الخروج
   const logout = () => {
     localStorage.removeItem("token");
     setUser(null);
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   if (!booted) return null;
