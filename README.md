@@ -189,8 +189,21 @@ npm install
 
 # 3.Start development server
 npm run dev
-📖 Usage Examples
 
-* Creating a Workout:** Navigate to the "AI Workout Builder" from the sidebar, select your goal (e.g., Hypertrophy), input your available equipment, and generate a plan.
-* Traxck micros and macros with a Nutrition tracker:** Go to the "AI Nutrition Tracker", enter your dietary preferences and goals, and the AI will generate a customized macro & micros breakdown for you.
-* Exploring the Audio Library:** Navigate to the "Audio Library" to listen to fitness podcasts or watch instructional videos directly within the app.
+
+## 📖 Usage Examples
+
+### ⭐ Creating a Workout
+Navigate to the **AI Workout Builder** from the sidebar, choose your goal  
+(e.g., *Hypertrophy*), enter your available equipment, and generate a personalized workout plan.
+
+---
+
+### ⭐ Tracking Macros & Micros with the Nutrition Tracker
+Go to the **AI Nutrition Tracker**, enter your dietary preferences and goals,  
+and the AI will generate a customized **macronutrient and micronutrient breakdown** tailored for you.
+
+---
+
+### ⭐ Exploring the Audio Library
+Visit the **Audio Library** to listen to fitness podcasts or watch instructional videos directly within the app.
