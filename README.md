@@ -156,7 +156,7 @@ project/
 
 ## 🚀 Local Setup Instructions
 
-### Backend Setup
+## 📘Backend Setup
 
 # 1.Navigate to backend directory
 cd backend
@@ -165,44 +165,44 @@ cd backend
 npm install
 
 # 3.Create .env file with required environment variables
-PORT=3000
-MONGO_URI=mongodb+srv://MJ:123456Jj@cluster0.dgfggq3.mongodb.net/?appName=Cluster0
-JWT_SECRET=change_me_to_a_long_random_string
-CORS_ORIGIN=http://localhost:5173
+*PORT=3000
+*MONGO_URI=mongodb+srv://MJ:123456Jj@cluster0.dgfggq3.mongodb.net/?appName=Cluster0
+*JWT_SECRET=change_me_to_a_long_random_string
+*CORS_ORIGIN=http://localhost:5173
 
-AI_PROVIDER=openai
-OPENAI_API_KEY=sk-****************************
-OPENAI_API_BASE=https://api.openai.com/v1
-OPENAI_MODEL=gpt-5-nano
+*AI_PROVIDER=openai
+*OPENAI_API_KEY=sk-****************************
+*OPENAI_API_BASE=https://api.openai.com/v1
+*OPENAI_MODEL=gpt-5-nano
 
 # 4.Start the Server
-npm start
+*npm start
 
-### Frontend Setup
+### 📘Frontend Setup
 
 # 1. Navigate to frontend directory
-cd FIT11
+*cd FIT11
 
 # 2.Install dependencies
-npm install
+*npm install
 
 # 3.Start development server
-npm run dev
+*npm run dev
 
 
 ## 📖 Usage Examples
 
 ### ⭐ Creating a Workout
-Navigate to the **AI Workout Builder** from the sidebar, choose your goal  
+*Navigate to the **AI Workout Builder** from the sidebar, choose your goal  
 (e.g., *Hypertrophy*), enter your available equipment, and generate a personalized workout plan.
 
 ---
 
 ### ⭐ Tracking Macros & Micros with the Nutrition Tracker
-Go to the **AI Nutrition Tracker**, enter your dietary preferences and goals,  
+*Go to the **AI Nutrition Tracker**, enter your dietary preferences and goals,  
 and the AI will generate a customized **macronutrient and micronutrient breakdown** tailored for you.
 
 ---
 
 ### ⭐ Exploring the Audio Library
-Visit the **Audio Library** to listen to fitness podcasts or watch instructional videos directly within the app.
+*Visit the **Audio Library** to listen to fitness podcasts or watch instructional videos directly within the app.
