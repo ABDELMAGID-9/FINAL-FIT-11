@@ -1,0 +1,18 @@
+[33m99f7b38[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m temp commit to prepare for history rewrite
+[33mda862c0[m 55
+[33mfc0b54a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m 44
+[33m8a29c7e[m read1
+[33mfbe056d[m read
+[33m3dd0719[m Add Vite env types
+[33mbba9217[m fix register image path + fix App layout
+[33m26dfe63[m Remove frontend .env and use Vercel env only
+[33m5400b0d[m fix
+[33m772552d[m Fix vercel.json JSON format
+[33mc56e8ed[m Remove all .env files from working tree
+[33mb3af3ee[m Removed secret key
+[33m3775204[m deployment
+[33mfd4b74a[m tt
+[33m5c28e49[m جج
+[33md8a3b53[m اا
+[33m83b1a12[m يي
+[33mc8ef8aa[m initial clean upload
