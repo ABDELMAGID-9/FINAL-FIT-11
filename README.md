@@ -74,35 +74,65 @@ The FIT11 platform integrates:
 
 
 
-## 📂 Project Structure
-final-version/
-│
-├── backend/
-│   ├── src/
-│   │   ├── config/db.js
-│   │   ├── middleware/auth.js
-│   │   ├── models/User.js
-│   │   ├── models/Workout.js
-│   │   ├── models/NutritionLog.js
-│   │   ├── routes/auth.js
-│   │   ├── routes/workouts.js
-│   │   ├── routes/ai.js
-│   │   ├── routes/nutrition.js
-│   │   └── server.js
-│   ├── utils/aiProvider.js
-│   └── package.json
-│
-├── FIT11/ (Frontend)
-│   ├── src/components/…
-│   ├── src/hooks/useAuth.tsx
-│   ├── src/lib/api.ts
-│   ├── src/App.tsx
-│   ├── vite.config.ts
-│   └── package.json
-│
-└── README.md
+## Project Structure
 
-***
+```text
+project/
+└── final-version/
+    ├── backend/
+    │   ├── node_modules/
+    │   ├── src/
+    │   │   ├── config/
+    │   │   │   └── db.js
+    │   │   ├── middleware/
+    │   │   │   └── auth.js
+    │   │   ├── models/
+    │   │   │   ├── NutritionLog.js
+    │   │   │   ├── Posts.js
+    │   │   │   ├── Users.js
+    │   │   │   └── Workout.js
+    │   │   ├── routes/
+    │   │   │   ├── ai.js
+    │   │   │   ├── auth.js
+    │   │   │   ├── nutrition.js
+    │   │   │   ├── posts.js
+    │   │   │   ├── users.js
+    │   │   │   └── workouts.js
+    │   │   └── utils/
+    │   │       ├── aiProvider.js
+    │   │       └── server.js
+    │   ├── package-lock.json
+    │   └── package.json
+    │
+    ├── FIT11/
+    │   ├── build/
+    │   ├── node_modules/
+    │   ├── public/
+    │   ├── src/
+    │   │   ├── assets/
+    │   │   ├── components/
+    │   │   ├── hooks/
+    │   │   │   └── useAuth.tsx
+    │   │   ├── lib/
+    │   │   │   └── api.ts
+    │   │   ├── styles/
+    │   │   │   └── globals.css
+    │   │   ├── types/
+    │   │   ├── App.tsx
+    │   │   ├── index.css
+    │   │   ├── main.tsx
+    │   │   └── vite-env.d.ts
+    │   ├── .gitignore
+    │   ├── index.html
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   ├── vercel.json
+    │   └── vite.config.ts
+    │
+    ├── bfg-1.14.0.jar
+    └── README.md
+```
+
 
 ## 🔐 Authentication & Security
 
