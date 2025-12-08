@@ -158,7 +158,6 @@ project/
 
 ### Backend Setup
 
-```bash
 # 1.Navigate to backend directory
 cd backend
 
